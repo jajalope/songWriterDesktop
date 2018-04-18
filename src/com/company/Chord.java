@@ -4,50 +4,50 @@ public class Chord {
 
     String name;
     String Position;
-    String [] T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12;
+    String [] T1 = new String[3], T2 = new String[3], T3 = new String[3], T4 = new String[3], T5 = new String[3], T6 = new String[3], T7 = new String[3], T8 = new String[3], T9 = new String[3], T10 = new String[3], T11 = new String[3], T12 = new String[3];
 
     public Chord (String [] chordStuff) {
-        this.name = chordStuff[1];
-        this.Position = chordStuff[2];
+        name = chordStuff[1];
+        Position = chordStuff[2];
         //simple
-        this.T1[0] = chordStuff[3];
-        this.T1[1] = chordStuff[4];
-        this.T1[2] = chordStuff[5];
-        this.T2[0] = chordStuff[6];
-        this.T2[1] = chordStuff[7];
-        this.T2[2] = chordStuff[8];
-        this.T3[0] = chordStuff[9];
-        this.T3[1] = chordStuff[10];
-        this.T3[2] = chordStuff[11];
-        this.T4[0] = chordStuff[12];
-        this.T4[1] = chordStuff[13];
-        this.T4[2] = chordStuff[14];
+        T1[0] = chordStuff[3];
+        T1[1] = chordStuff[4];
+        T1[2] = chordStuff[5];
+        T2[0] = chordStuff[6];
+        T2[1] = chordStuff[7];
+        T2[2] = chordStuff[8];
+        T3[0] = chordStuff[9];
+        T3[1] = chordStuff[10];
+        T3[2] = chordStuff[11];
+        T4[0] = chordStuff[12];
+        T4[1] = chordStuff[13];
+        T4[2] = chordStuff[14];
         //intermediate
-        this.T5[0] = chordStuff[15];
-        this.T5[1] = chordStuff[16];
-        this.T5[2] = chordStuff[17];
-        this.T6[0] = chordStuff[18];
-        this.T6[1] = chordStuff[19];
-        this.T6[2] = chordStuff[20];
-        this.T7[0] = chordStuff[21];
-        this.T7[1] = chordStuff[22];
-        this.T7[2] = chordStuff[23];
-        this.T8[0] = chordStuff[24];
-        this.T8[1] = chordStuff[25];
-        this.T8[2] = chordStuff[26];
+        T5[0] = chordStuff[15];
+        T5[1] = chordStuff[16];
+        T5[2] = chordStuff[17];
+        T6[0] = chordStuff[18];
+        T6[1] = chordStuff[19];
+        T6[2] = chordStuff[20];
+        T7[0] = chordStuff[21];
+        T7[1] = chordStuff[22];
+        T7[2] = chordStuff[23];
+        T8[0] = chordStuff[24];
+        T8[1] = chordStuff[25];
+        T8[2] = chordStuff[26];
         //advanced
-        this.T9[0] = chordStuff[27];
-        this.T9[1] = chordStuff[28];
-        this.T9[2] = chordStuff[29];
-        this.T10[0] = chordStuff[30];
-        this.T10[1] = chordStuff[31];
-        this.T10[2] = chordStuff[32];
-        this.T11[0] = chordStuff[33];
-        this.T11[1] = chordStuff[34];
-        this.T11[2] = chordStuff[35];
-        this.T12[0] = chordStuff[36];
-        this.T12[1] = chordStuff[37];
-        this.T12[2] = chordStuff[38];
+        T9[0] = chordStuff[27];
+        T9[1] = chordStuff[28];
+        T9[2] = chordStuff[29];
+        T10[0] = chordStuff[30];
+        T10[1] = chordStuff[31];
+        T10[2] = chordStuff[32];
+        T11[0] = chordStuff[33];
+        T11[1] = chordStuff[34];
+        T11[2] = chordStuff[35];
+        T12[0] = chordStuff[36];
+        T12[1] = chordStuff[37];
+        T12[2] = chordStuff[38];
     }
 
 }

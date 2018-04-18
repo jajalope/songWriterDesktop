@@ -10,14 +10,14 @@ public class Main {
     public static ArrayList<Key> keys = new ArrayList<>();
     public static void main(String[] args) throws IOException {
 
-        File file = new File("We'll Fix This In Post");
+        File file = new File("CMajorTest.csv");
         Scanner fileReader = new Scanner(file);
         int count = 0;
         while(fileReader.hasNextLine()) {
             String [] temp = fileReader.nextLine().split(",");
             if (temp[0].equalsIgnoreCase("Key")) continue;
 
-            if ((count-1)%7==0) {
+            if ((count-1)%7==0 || count == 0) {
                 Key x = new Key(temp[0]);
                 keys.add(x);
             }
