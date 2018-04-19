@@ -2,12 +2,12 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Key {
+class Key {
 
-    public ArrayList<Chord> chords = new ArrayList<>();
-    public String name;
+    ArrayList<Chord> chords = new ArrayList<>();
+    String name;
 
-    public Key (String keyName){
+    Key (String keyName){
         name = keyName;
     }
 }
