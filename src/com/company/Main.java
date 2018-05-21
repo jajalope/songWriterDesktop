@@ -32,7 +32,7 @@ public class Main {
         }
         Scanner a = new Scanner(System.in);
         while(true) {
-            System.out.println("press 0 to exit, 1 to search by chord, and 2 to search by chord and key (WIP).");
+            System.out.println("press 0 to exit, 1 to search by chord, 2 to search by chord and key (WIP), and 3 to generate a chord progression.");
             String nextOpp = a.next();
             if (nextOpp.equals("0")) break;
             else if (nextOpp.equalsIgnoreCase("1")) {
@@ -47,6 +47,17 @@ public class Main {
                 String nextChord = a.next();
                 Objects.requireNonNull(chordFinder(nextChord, nextKey)).suggestChords();
             }
+            else if (nextOpp.equalsIgnoreCase("3")) {
+                System.out.println("what chord would you like to start with?");
+                String startChord = a.next();
+                System.out.println("How long should the progression be");
+                int len = a.nextInt();
+                System.out.println("What is the maximum transition difficulty (easy = 1, intermediate = 2, advanced = 3)");
+                int diff = a.nextInt();
+                System.out.print(startChord + " ");
+                suggestProgression(startChord, len, diff);
+            }
+            System.out.println();
         }
     }
 
@@ -77,5 +88,12 @@ public class Main {
             }
         }
         return null;
+    }
+    static void suggestProgression(String chord, int length, int difficultyMax) {
+        Chord temp = chordFinder(chord);
+        int randIndex = (int)(Math.random()*(difficultyMax * 4)+1);
+        if (length == 1) return;
+        System.out.print(temp.getTransition(randIndex)[0] + " ");
+        suggestProgression(temp.getTransition(randIndex)[0], length-1, difficultyMax);
     }
 }
