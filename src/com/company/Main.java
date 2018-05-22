@@ -97,3 +97,4 @@ public class Main {
         suggestProgression(temp.getTransition(randIndex)[0], length-1, difficultyMax);
     }
 }
+
